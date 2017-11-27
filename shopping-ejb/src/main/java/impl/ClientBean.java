@@ -8,8 +8,8 @@ import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 @Stateless
-@Local(Client.class)
-@Remote(Client.class)
+@Local(ClientLocal.class)
+@Remote(ClientRemote.class)
 public class ClientBean implements interfaces.Client {
 
 	@EJB
